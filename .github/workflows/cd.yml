@@ -19,7 +19,8 @@ jobs:
       - name: run build 
         run: scripts/buildprod.sh
 
-    # Add "id-token" with the intended permissions.
+job-id:
+# Add "id-token" with the intended permissions.
     permissions:
       contents: 'read'
       id-token: 'write'
