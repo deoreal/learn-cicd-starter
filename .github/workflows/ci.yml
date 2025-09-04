@@ -20,7 +20,10 @@ jobs:
 
       - name: run tests 
         run: go test ./... -cover
-      
+     
+    name: Style
+    runs-on: ubuntu-latest
+
     steps:
       - name: Check out code
         uses: actions/checkout@v4
