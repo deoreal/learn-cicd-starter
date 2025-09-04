@@ -26,7 +26,20 @@ jobs:
       
       - name: run gosec 
         run: gosec ./...
-     
+  
+  job_id:
+    steps:
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v3'
+
+      - name: 'Use gcloud CLI'
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-471113/notely-ar-repo/notely:latest     
+
 
   Style:
     name: Style
