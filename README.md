@@ -1,4 +1,4 @@
-![graphic on testing stats](https://github.com/deoreal/learn-cicd-starter/actions/workflows/ci/badge.svg)
+![graphic on testing stats](https://github.com/deoreal/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
